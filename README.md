@@ -1,110 +1,140 @@
-# ⚡ Void Injector
+# Void Injector
 
 <p align="center">
-  <b>A modern Windows DLL loading utility built with C++ and Win32</b>
+  <b>A lightweight Windows utility built with C++ and Win32 API</b>
+  <br>
+  Exploring native Windows development, GUI design, and process management.
 </p>
 
 <p align="center">
 
-![Language](https://img.shields.io/badge/Language-C%2B%2B-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D6)
-![API](https://img.shields.io/badge/API-Win32-purple)
+![C++](https://img.shields.io/badge/Language-C%2B%2B-blue)
+![Windows](https://img.shields.io/badge/Platform-Windows-0078D6)
+![Win32](https://img.shields.io/badge/API-Win32-purple)
 ![Version](https://img.shields.io/badge/Version-1.0.0-green)
 
 </p>
 
 ---
 
-## 📌 Overview
+## Overview
 
-**Void Injector** is a lightweight Windows utility created to explore native **C++ development**, **Windows APIs**, **process management**, and **custom desktop interfaces**.
+**Void Injector** is a native Windows application built in **C++** using the **Win32 API**.
 
-The project features a custom-built graphical interface, configurable settings, process monitoring, and DLL loading functionality.
+The project focuses on exploring:
 
-Built from the ground up using native Windows technologies without external UI frameworks.
+- Native C++ development
+- Windows API interaction
+- Custom desktop application design
+- GUI development
+- Process management concepts
 
----
-
-## ✨ Features
-
-## 🎨 Custom Interface
-
-- 🌙 Modern dark-themed UI
-- 🖥️ Custom Win32 graphics rendering
-- 🎨 Customizable color themes
-- 📊 Live status indicators
-- 📌 System tray support
-- ⚡ Lightweight performance
+The application features a custom-built interface, configurable settings, theme customization, and a lightweight native design.
 
 ---
 
-## ⚙️ Configuration
+## Features
 
-- 💾 Persistent settings
-- 🎨 Theme saving
-- 🪟 Window preferences
-- ⏱️ Configurable options
-- 🔧 User-controlled behaviour
+### Custom GUI
 
----
-
-## 🔍 Process Management
-
-- 🔎 Application detection
-- 📈 Process monitoring
-- 📝 Status tracking
-- 🖥️ Process information display
+- Custom Win32 interface
+- Dark themed design
+- Custom color themes
+- Status indicators
+- Interactive UI elements
+- System tray support
+- Lightweight rendering system
 
 ---
 
-## 🧩 DLL Management
+### File Management
 
-- 📂 File browser integration
-- 📁 DLL path management
-- ⚙️ Loading workflow
-- 👤 User-selected files
+- Built-in file browser
+- File selection system
+- Saved preferences
+- Clear/reset options
+- Live operation status
 
 ---
 
-# 🛠️ Built With
+### Process Monitoring
+
+- Application detection
+- Real-time process checking
+- Process ID display
+- Automatic status updates
+- Launch monitoring
+
+---
+
+### Automation & Settings
+
+- Configurable startup options
+- Adjustable delay settings
+- Start with Windows option
+- Start minimized option
+- Always-on-top mode
+- Automatic monitoring options
+
+---
+
+### Theme System
+
+- Custom background colors
+- Custom accent colors
+- Custom panel styling
+- Saved theme preferences
+- Reset to default theme option
+
+---
+
+### Status System
+
+- Ready state tracking
+- Active operation indicators
+- Error reporting
+- Detailed status messages
+- Live interface updates
+
+---
+
+## Built With
 
 ```
 C++
 Win32 API
 Windows GDI
 Windows Registry API
-Visual Studio Toolchain
+Visual Studio
 Windows SDK
 ```
 
 ---
 
-# 🚀 Building
+## Building
 
-## Requirements
-
-Before building, make sure you have:
+### Requirements
 
 ```
-✔ Windows 10 / Windows 11
-✔ Visual Studio 2022
-✔ Windows SDK
+Windows 10 / Windows 11
+Visual Studio 2022
+Windows SDK
 ```
 
 ---
 
-## Compile
+### Compile
 
 ```bash
 rc resource.rc
 
 cl /EHsc /DUNICODE /D_UNICODE /Fe:Void.exe main.cpp resource.res ^
-user32.lib gdi32.lib comdlg32.lib shell32.lib comctl32.lib advapi32.lib
+user32.lib gdi32.lib comdlg32.lib shellapi.lib comctl32.lib advapi32.lib
 ```
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```
 VoidInjector
@@ -113,40 +143,29 @@ VoidInjector
 ├── resource.rc
 ├── resource.h
 ├── README.md
-│
-└── assets
-    └── icons
+└── .ico
 ```
 
 ---
 
-# 📸 Screenshots
+## Screenshots
 
-Add screenshots here:
+<img width="615" height="521" alt="image" src="https://github.com/user-attachments/assets/8f962b42-44b0-4f0c-9460-176badeeed14" />
 
-```
-/screenshots
-
-<img width="615" height="521" alt="image" src="https://github.com/user-attachments/assets/796c64c6-5e6c-41b6-9f91-d0a76cbf44a9" />
-
-<img width="238" height="198" alt="image" src="https://github.com/user-attachments/assets/1c19b704-54f7-456a-a6dc-3a604e7b8414" />
-
-```
+<img width="238" height="198" alt="image" src="https://github.com/user-attachments/assets/9ba43fc7-d9c2-4580-8825-1927e00206a4" />
 
 ---
 
-# 🔒 Disclaimer
+## Disclaimer
 
-⚠️ **Important**
-
-This project is created for **educational and development purposes**.
+This project was created for educational and development purposes.
 
 The goal of this project is to explore:
 
-- Native C++ programming
-- Windows API development
+- Native Windows programming
+- C++ application development
 - GUI engineering
-- Process interaction concepts
+- Windows API concepts
 
 Only use this software with applications and systems you own or have permission to modify.
 
@@ -154,32 +173,28 @@ The author is not responsible for misuse of this project.
 
 ---
 
-# 🤝 Contributing
+## Contributing
 
 Contributions, suggestions, and improvements are welcome.
 
 To contribute:
 
 ```
-1. Fork this repository
-2. Create a feature branch
+1. Fork the repository
+2. Create a new branch
 3. Make your changes
 4. Submit a pull request
 ```
 
 ---
 
-# ⭐ Support
+## Support
 
-If you find this project interesting:
-
-⭐ Consider starring the repository
-
-It helps support future improvements and development.
+If you find this project useful, consider starring the repository.
 
 
 ---
 
 <p align="center">
-  Made with ❤️ using C++
+Made with C++ on Windows
 </p>
